@@ -134,7 +134,7 @@ html {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #ffff;
-  font-size: 50px;
+  font-size: 3.125em;
   width: auto;
   text-shadow: 3px 4px 4px #000000;
   font-weight: bold;
@@ -177,20 +177,33 @@ footer figure img:hover {
 .middle-content-sobre {
   width: 100%;
   height: 100vh;
+  text-align: center;
 }
 
 .middle-content-sobre h1 {
+  display: flex;
+  justify-content: center;
   padding-top: 250px;
-  font-size: 64px;
+  font-size: 4em;
   color: #ffff;
   padding-bottom: 50px;
-  margin: 0 auto;
 }
 
 .middle-content-sobre .paragrafo {
-  width: 50%;
-  margin: 0 auto;
-  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 2em;
   color: #ffff;
   text-align: center;
+}
+
+.middle-content-sobre .paragrafo p {
+  width: 50%;
+}
+
+.middle-content-sobre figure img {
+  position: absolute;
+  display: flex;
+  width: 22%;
 }
