@@ -256,9 +256,13 @@ footer figure img:hover {
 .grid-figures {
   display: grid;
   grid-template-columns: 12em 12em 12em;
+  grid-template-rows: 11em 11em;
   justify-content: center;
 }
 
+.js-logo {
+  padding-top: 0.5em;
+}
 .grid-softskills {
   display: grid;
   color: #ffff;
