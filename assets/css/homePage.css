@@ -12,12 +12,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/*PÁGINA HOME*/
-
 #container-home-page {
   background: var(--main-bg-color);
   height: 100vh;
@@ -41,11 +35,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 3px 4px 4px #000000;
 }
 
 #menu h2 {
-  cursor: pointer;
   transition: 0.2s all ease-in-out;
   padding: 10px;
   border-right: 2px solid #ffff;
@@ -53,8 +45,9 @@ html {
   padding-left: 30px;
 }
 
-#menu h2:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+#menu h2 a:hover {
+  color: #26dada;
+  cursor: pointer;
 }
 
 #menu h2:last-child {
@@ -68,7 +61,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 8em;
+  padding-top: 12em;
+}
+
+@media (max-width: 1500px) {
+  .middle-content-home {
+    padding-top: 10em;
+  }
 }
 
 .logo {
@@ -82,6 +81,13 @@ html {
 .logo-principal img {
   width: 20em;
   height: 20em;
+}
+
+@media (max-width: 1920px) {
+  .logo-principal img {
+    width: 30em;
+    height: 30em;
+  }
 }
 
 .apresentacao {
@@ -111,7 +117,7 @@ html {
   .apresentacao h1 {
     font-size: 80px;
     padding-left: 10px;
-    color: #ffffff;
+    color: #ffff;
   }
 }
 .apresentacao button {
@@ -162,120 +168,4 @@ footer figure img {
 footer figure img:hover {
   background-color: #041b1b;
   border-radius: 50%;
-}
-
-/*PÁGINA SOBRE*/
-#container-sobre-page {
-  background: var(--second-bg-color);
-  height: 100vh;
-  width: 100%;
-}
-
-.middle-content-sobre h1 {
-  display: flex;
-  justify-content: center;
-  padding-top: 3em;
-  font-size: 4em;
-  color: #ffff;
-  padding-bottom: 0.2em;
-}
-
-@media (max-width: 1500px) {
-  .middle-content-sobre h1 {
-    font-size: 3.5em;
-  }
-}
-
-.middle-content-sobre .paragrafo {
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-  color: #ffff;
-  text-align: center;
-}
-
-@media (max-width: 1500px) {
-  .middle-content-sobre .paragrafo {
-    font-size: 1.5em;
-  }
-}
-
-.middle-content-sobre .paragrafo p {
-  width: 50%;
-}
-
-.middle-content-sobre figure img {
-  position: absolute;
-  display: flex;
-  width: 22%;
-}
-
-/*PÁGINA SKILLS*/
-
-#container-skills-page {
-  background: var(--main-bg-color);
-  width: 100%;
-  height: 100vh;
-}
-
-@media (max-width: 1500px) {
-  #container-skills-page {
-    font-size: 0.8em;
-  }
-}
-.grid {
-  padding-top: 15em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center;
-}
-
-@media (max-width: 1500px) {
-  .grid {
-    padding-top: 12em;
-  }
-}
-
-.grid-1 {
-  color: #ffff;
-  text-transform: uppercase;
-}
-
-.grid-1 h1 {
-  font-size: 4em;
-  padding-bottom: 1em;
-}
-
-.grid-figures {
-  display: grid;
-  grid-template-columns: 12em 12em 12em;
-  grid-template-rows: 11em 11em;
-  justify-content: center;
-}
-
-.js-logo {
-  padding-top: 0.5em;
-}
-.grid-softskills {
-  display: grid;
-  color: #ffff;
-  grid-template-rows: repeat(2, 9em);
-}
-
-.grid-softskills h1 {
-  text-transform: uppercase;
-  font-size: 4em;
-}
-
-.grid-adjetivos {
-  font-size: 1.5em;
-  display: grid;
-  gap: 1em;
-}
-/*PAGINA PROJETOS */
-
-#container-projetos-page {
-  background: var(--second-bg-color);
-  width: 100%;
-  height: 100vh;
 }
