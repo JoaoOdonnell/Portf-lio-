@@ -38,6 +38,11 @@
     font-size: 3.5em;
   }
 }
+@media (max-width: 1366px) {
+  .middle-content-sobre h1 {
+    padding-top: 2em;
+  }
+}
 
 .middle-content-sobre .paragrafo {
   padding-left: 2em;
