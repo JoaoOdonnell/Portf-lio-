@@ -36,6 +36,12 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .grid {
+    padding-top: 10em;
+  }
+}
+
 .grid-1 {
   color: #ffff;
   text-transform: uppercase;

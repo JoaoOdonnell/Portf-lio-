@@ -118,6 +118,8 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  align-items: center;
+  gap: 1em;
   width: 100%;
 }
 
@@ -135,17 +137,18 @@ footer div p {
 .triangulo-para-baixo {
   width: 0;
   height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 25px solid #ffff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffff;
+  cursor: pointer;
 }
 
 @media (max-width: 1366px) {
   .triangulo-para-baixo {
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #ffff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
   }
 }
