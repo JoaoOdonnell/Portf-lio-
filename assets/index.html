@@ -45,22 +45,40 @@
     </div>
 
     <footer>
-      <figure>
-        <a target="_blank" href="https://github.com/JoaoOdonnell"><img src="./img/GitHub.svg" alt="link-github"></a>
+      <div class="figura">
+        <figure>
+          <a target="_blank" href="https://github.com/JoaoOdonnell"><img src="./img/GitHub.svg" alt="link-github"
+              onmouseover="mouseOverG()" onmouseout="mouseOutG()">
+            <p id="github"></p>
+          </a>
+      </div>
       </figure>
 
       <figure>
-        <a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-o-donnell-211a4b237/"><img
-            src="./img/LinkedIn.svg" alt="link-linkedin"></a>
+        <div class="figura">
+          <a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-o-donnell-211a4b237/"><img
+              src="./img/LinkedIn.svg" alt="link-linkedin" onmouseover="mouseOverL()" onmouseout="mouseOutL()">
+            <p id="linkedin"></p>
+          </a>
+        </div>
       </figure>
 
       <figure>
-        <a target="_blank" href="https://www.instagram.com/joao.odonnell/"><img src="./img/Instagram.svg"
-            alt="link-instagram"></a>
+        <div class="figura">
+          <a target="_blank" href="https://www.instagram.com/joao.odonnell/"><img src="./img/Instagram.svg"
+              alt="link-instagram" onmouseover="mouseOverI()" onmouseout="mouseOutI()">
+            <p id="instagram"></p>
+          </a>
+        </div>
       </figure>
 
       <figure>
-        <a target="_blank" href="mailto:talaiajoao211@gmail.com"><img src="/assets/img/email.svg" alt="link-email"></a>
+        <div class="figura">
+          <a target="_blank" href="mailto:talaiajoao211@gmail.com"><img src="/assets/img/email.svg" alt="link-email"
+              onmouseover="mouseOverE()" onmouseout="mouseOutE()">
+            <p id="email"></p>
+          </a>
+        </div>
       </figure>
     </footer>
   </section>
@@ -164,10 +182,16 @@
       <div>
         <p><b>ver mais</b></p>
       </div>
-      <div class="triangulo-para-baixo"></div>
+      <div class="mais-projetos">
+        <div class="triangulo-para-baixo" onclick="mostrarProjetos()">
+        </div>
+        <a id="linkGitHub" target="_blank" href="https://github.com/JoaoOdonnell"></a>
+      </div>
     </footer>
 
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

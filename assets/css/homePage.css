@@ -176,3 +176,8 @@ footer figure img:hover {
   background-color: #26dada;
   border-radius: 50%;
 }
+
+footer .figura a {
+  text-decoration: none;
+  display: flex;
+}

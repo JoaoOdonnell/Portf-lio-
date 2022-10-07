@@ -152,3 +152,9 @@ footer div p {
     border-top: 15px solid #ffff;
   }
 }
+
+.footer-projetos .mais-projetos #linkGitHub {
+  text-decoration: none;
+  color: yellow;
+  font-size: 1.5em;
+}
