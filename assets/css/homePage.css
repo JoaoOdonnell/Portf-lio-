@@ -114,6 +114,12 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .apresentacao {
+    padding-top: 60px;
+  }
+}
+
 .apresentacao h1 {
   font-size: 60px;
   padding-left: 10px;
