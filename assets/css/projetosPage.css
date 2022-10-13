@@ -161,11 +161,22 @@ footer div p {
   }
 }
 
-.hidden {
-  display: none;
+#LinkGitHub {
+  position: absolute;
+  overflow: hidden;
 }
 
-.footer-projetos #linkGitHub {
+.hide {
+  transition: 1s;
+  opacity: 0;
+}
+
+.show {
+  transition: 1s;
+  opacity: 1;
+}
+
+.footer-projetos #linkGitHub a {
   text-decoration: none;
   color: yellow;
   font-size: 1.5em;

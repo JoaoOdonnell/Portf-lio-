@@ -6,13 +6,15 @@ function mouseEvent(isover, elementId, overtext) {
   }
 }
 
-function mostrarProjetos() {
-  document.getElementById("linkGitHub").innerHTML = "https://github.com/JoaoOdonnell";
-}
+var triangulo = document.querySelectorAll(".triangulo-para-baixo");
 
-const triangulo = document.querySelector(".triangulo-para-baixo");
-const linkGit = document.querySelector("#linkGitHub");
-
-triangulo.addEventListener("click", () => {
-  linkGit.classList.toggle("hidden");
+triangulo[0].addEventListener("click", () => {
+  let linkGitHub = document.getElementById("linkGitHub");
+  if (linkGitHub.classList.contains("hide")) {
+    linkGitHub.classList.add("show");
+    linkGitHub.classList.remove("hide");
+  } else {
+    linkGitHub.classList.add("hide");
+    linkGitHub.classList.remove("show");
+  }
 });
