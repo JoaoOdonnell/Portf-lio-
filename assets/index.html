@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <!-- PÁGINA INICIAL -->
   <section id="container-home-page">
     <header id="cabecalho">
       <div class="logo">
@@ -49,9 +50,8 @@
     <footer>
       <div class="figura">
         <figure>
-          <a target="_blank" href="https://github.com/JoaoOdonnell"><img src="./img/GitHub.svg" alt="link-github"
-              onmouseover="mouseEvent(true, 'github', 'Github')" onmouseout="mouseEvent(false, 'github', 'GitHub')">
-            <p id="github"></p>
+          <a target="_blank" href="https://github.com/JoaoOdonnell"><img src="./img/GitHub.svg" alt="link-github">
+
           </a>
       </div>
       </figure>
@@ -59,9 +59,7 @@
       <figure>
         <div class="figura">
           <a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-o-donnell-211a4b237/"><img
-              src="./img/LinkedIn.svg" alt="link-linkedin" onmouseover="mouseEvent(true, 'linkedin', 'Linkedin')"
-              onmouseout="mouseEvent(false, 'linkedin', 'Linkedin')">
-            <p id="linkedin"></p>
+              src="./img/LinkedIn.svg" alt="link-linkedin">
           </a>
         </div>
       </figure>
@@ -69,24 +67,21 @@
       <figure>
         <div class="figura">
           <a target="_blank" href="https://www.instagram.com/joao.odonnell/"><img src="./img/Instagram.svg"
-              alt="link-instagram" onmouseover="mouseEvent(true, 'instagram', 'Instagram')"
-              onmouseout="mouseEvent(false, 'instagram', 'Instagram')">
-            <p id="instagram"></p>
+              alt="link-instagram">
           </a>
         </div>
       </figure>
 
       <figure>
         <div class="figura">
-          <a target="_blank" href="mailto:talaiajoao211@gmail.com"><img src="/assets/img/email.svg" alt="link-email"
-              onmouseover="mouseEvent(true, 'email', 'E-mail')" onmouseout="mouseEvent(false, 'email', 'E-mail')">
-            <p id="email"></p>
+          <a target="_blank" href="mailto:talaiajoao211@gmail.com"><img src="/assets/img/email.svg" alt="link-email">
           </a>
         </div>
       </figure>
     </footer>
   </section>
 
+  <!-- PÁGINA SOBRE -->
   <section id="container-sobre-page">
     <div class="middle-content-sobre">
       <h1>SOBRE MIM</h1>
@@ -117,6 +112,7 @@
     </div>
   </section>
 
+  <!-- PÁGINA SKILLS -->
   <section id="container-skills-page">
     <div class="grid">
       <div class="grid-1">
@@ -160,7 +156,8 @@
     </div>
   </section>
 
-  <div id="container-projetos-page">
+  <!-- PÁGINA PROJETOS -->
+  <section id="container-projetos-page">
     <div class="header-projetos">
       <h1>projetos</h1>
     </div>
@@ -185,21 +182,15 @@
     <footer class="footer-projetos">
       <div class="mostrar-mais">
         <div>
-          <p><b>ver mais</b></p>
-        </div>
-        <div class="mais-projetos">
-          <div class="triangulo-para-baixo">
-          </div>
-        </div>
-      </div>
-
-      <div id="linkGitHub" class="LinkGitHub hide">
-        <a target="_blank" href="https://github.com/JoaoOdonnell">https://github.com/JoaoOdonnell</a>
+          <button id="btnMostrar" onclick="mostrarMais()">Ver mais</button>
+        </div><span id="vazio"></span>
+        <a target="_blank" href="https://github.com/JoaoOdonnell" id="linkGit">https://github.com/JoaoOdonnell</a>
       </div>
     </footer>
 
-  </div>
+  </section>
 
+  <!-- PÁGINA CONTATO -->
   <section id="container-contato-page">
     <div class="middle-content-contato">
       <h1>CONTATO</h1>

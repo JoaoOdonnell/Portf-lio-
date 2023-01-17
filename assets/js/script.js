@@ -1,20 +1,15 @@
-function mouseEvent(isover, elementId, overtext) {
-  if (isover) {
-    document.getElementById(elementId).innerHTML = `>${overtext}`;
+function mostrarMais() {
+  var linkGit = document.getElementById("linkGit");
+  var btn = document.getElementById("btnMostrar");
+  var vazio = document.getElementById("vazio");
+
+  if (vazio.style.display === "none") {
+    vazio.style.display = "inline";
+    linkGit.style.display = "none";
+    btn.innerHTML = "Ver mais";
   } else {
-    document.getElementById(elementId).innerHTML = "";
+    vazio.style.display = "none";
+    linkGit.style.display = "inline";
+    btn.innerHTML = "Ver menos";
   }
 }
-
-var triangulo = document.querySelectorAll(".triangulo-para-baixo");
-
-triangulo[0].addEventListener("click", () => {
-  let linkGitHub = document.getElementById("linkGitHub");
-  if (linkGitHub.classList.contains("hide")) {
-    linkGitHub.classList.add("show");
-    linkGitHub.classList.remove("hide");
-  } else {
-    linkGitHub.classList.add("hide");
-    linkGitHub.classList.remove("show");
-  }
-});
