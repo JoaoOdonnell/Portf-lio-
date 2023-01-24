@@ -13,6 +13,7 @@
   height: 100%;
   align-items: center;
   flex-direction: column;
+  overflow-y: hidden;
 }
 
 .middle-content-contato h1 {
@@ -37,4 +38,9 @@ form .form-contato input {
 form .form-contato input:hover,
 input:focus {
   border-color: #07e6e6;
+}
+
+.btn-contato:hover {
+  background-color: #07e6e6;
+  cursor: pointer;
 }

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/skillsPage.css">
   <link rel="stylesheet" href="./css/projetosPage.css">
   <link rel="stylesheet" href="./css/contatoPage.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -40,14 +41,14 @@
             target="_blank">Currículo</a></button>
       </div>
 
-      <div class="logo-principal">
+      <div class="logo-principal slide-right">
         <figure>
           <img src="./img/LogoJT.svg" alt="logo-Joao">
         </figure>
       </div>
     </div>
 
-    <footer>
+    <footer class="slide-top">
       <div class="figura">
         <figure>
           <a target="_blank" href="https://github.com/JoaoOdonnell"><img src="./img/GitHub.svg" alt="link-github">
@@ -83,13 +84,17 @@
 
   <!-- PÁGINA SOBRE -->
   <section id="container-sobre-page">
-    <div class="middle-content-sobre">
-      <h1>SOBRE MIM</h1>
+    <div class="middle-content-sobre slide-left">
+
+      <div>
+        <h1>SOBRE MIM</h1>
+      </div>
+
       <figure>
         <img src="./img/boneco.svg" alt="boneco">
       </figure>
 
-      <div class="paragrafo">
+      <div class="paragrafo slide-bottom">
         <p> <span style="padding-left: 1.5em;">Olá</span>, me chamo <b style="color: #26dada;">João O'Donnell</b>!
           Sou uma pessoa sempre disponível
           para
@@ -115,7 +120,7 @@
   <!-- PÁGINA SKILLS -->
   <section id="container-skills-page">
     <div class="grid">
-      <div class="grid-1">
+      <div class="grid-1 slide-top">
         <h1>hard skills</h1>
         <div class="grid-figures">
           <figure class="js-logo">
@@ -141,7 +146,7 @@
         </div>
       </div>
 
-      <div class="grid-softskills">
+      <div class="grid-softskills slide-bottom">
         <div class="grid-h1-softskills">
           <h1>Soft Skills</h1>
         </div>
@@ -158,48 +163,50 @@
 
   <!-- PÁGINA PROJETOS -->
   <section id="container-projetos-page">
-    <div class="header-projetos">
-      <h1>projetos</h1>
-    </div>
 
-    <div class="grid-projetos">
-      <figure>
-        <img src="./img/construction.svg" alt="construction-image">
-        <p>Building</p>
-      </figure>
-
-      <figure>
-        <img src="./img/construction.svg" alt="construction-image">
-        <p>Building</p>
-      </figure>
-
-      <figure>
-        <img src="./img/construction.svg" alt="construction-image">
-        <p>Building</p>
-      </figure>
-    </div>
-
-    <footer class="footer-projetos">
-      <div class="mostrar-mais">
-        <div>
-          <button id="btnMostrar" onclick="mostrarMais()">Ver mais</button>
-        </div><span id="vazio"></span>
-        <a target="_blank" href="https://github.com/JoaoOdonnell" id="linkGit">https://github.com/JoaoOdonnell</a>
+    <div class="slide-top">
+      <div class="header-projetos">
+        <h1>projetos</h1>
       </div>
-    </footer>
 
+      <div class="grid-projetos">
+        <figure>
+          <img src="./img/construction.svg" alt="construction-image">
+          <p>Building</p>
+        </figure>
+
+        <figure>
+          <img src="./img/construction.svg" alt="construction-image">
+          <p>Building</p>
+        </figure>
+
+        <figure>
+          <img src="./img/construction.svg" alt="construction-image">
+          <p>Building</p>
+        </figure>
+      </div>
+
+      <footer class="footer-projetos">
+        <div class="mostrar-mais">
+          <div>
+            <button id="btnMostrar" onclick="mostrarMais()">Ver mais</button>
+          </div><span id="vazio"></span>
+          <a target="_blank" href="https://github.com/JoaoOdonnell" id="linkGit">https://github.com/JoaoOdonnell</a>
+        </div>
+      </footer>
+    </div>
   </section>
 
   <!-- PÁGINA CONTATO -->
   <section id="container-contato-page">
-    <div class="middle-content-contato">
+    <div class="middle-content-contato slide-top">
       <h1>CONTATO</h1>
       <form action="pagina-processa-dados">
         <div class="form-contato">
           <input type="text" name="nome" placeholder="Nome">
           <input type="email" name="email" placeholder="E-mail">
-          <input class="mensagem" type="text" name="mensagem" placeholder="Mensagem">
-          <input type="button" value="ENVIAR">
+          <input id="mensagem" type="text" name="mensagem" placeholder="Mensagem">
+          <input class="btn-contato" type="button" value="ENVIAR">
         </div>
       </form>
 
@@ -207,6 +214,7 @@
   </section>
 
   <script src="js/script.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 
 </html>
