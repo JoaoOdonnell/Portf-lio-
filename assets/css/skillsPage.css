@@ -47,11 +47,13 @@
   grid-template-columns: 12em 12em 12em;
   grid-template-rows: 11em 11em;
   justify-content: center;
+  gap: 2em;
 }
 
 .js-logo {
-  padding-top: 0.5em;
+  padding-top: 0.6em;
 }
+
 .grid-softskills {
   display: grid;
   color: #ffff;
@@ -67,4 +69,23 @@
   font-size: 1.5em;
   display: grid;
   gap: 1em;
+}
+
+.logo-Git,
+.Logo-gitHub {
+  width: 8em;
+  height: 10em;
+}
+
+@media (max-width: 1500px) {
+  .logo-Git,
+  .Logo-gitHub {
+    height: 12em;
+  }
+}
+
+@media (max-width: 1500px) {
+  .logo-Java {
+    height: 12em;
+  }
 }
