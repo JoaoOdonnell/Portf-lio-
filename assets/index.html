@@ -25,11 +25,13 @@
       </div>
 
       <nav id="menu">
-        <h2><a href="#container-home-page">Início</a></h2>
-        <h2><a href="#container-sobre-page">Sobre</a></h2>
-        <h2><a href="#container-skills-page">Skills</a></h2>
-        <h2><a href="#container-projetos-page">Projetos</a></h2>
-        <h2><a href="#container-contato-page">Contato</a></h2>
+        <ul>
+          <li><a href="#container-home-page">Início</a></li>
+          <li><a href="#container-sobre-page">Sobre</a></li>
+          <li><a href="#container-skills-page">Skills</a></li>
+          <li><a href="#container-projetos-page">Projetos</a></li>
+          <li><a href="#container-contato-page">Contato</a></li>
+        </ul>
       </nav>
     </header>
     <div class="middle-content-home">
@@ -37,7 +39,8 @@
         <h2>Olá! Eu sou</h2>
         <h1 class="meu-nome">João <b style="color: #26dada;">O'Donnell.</b></h1>
         <h3>Desenvolvedor Front-End</h3>
-        <button><a href="https://drive.google.com/file/d/1gAQX1ErciVp2RI7z1eQz3c7AERYxUqJY/view?usp=sharing"
+        <button class="btn-curriculo"><a
+            href="https://drive.google.com/file/d/16TOwpp-bKHcX_Fl-_3sdif-4sqK6aS6l/view?usp=sharing"
             target="_blank">Currículo</a></button>
       </div>
 
@@ -151,11 +154,11 @@
           <h1>Soft Skills</h1>
         </div>
         <div class="grid-adjetivos">
-          <h2>Trabalho em equipe</h2>
-          <h2>Comunicação</h2>
-          <h2>Liderança</h2>
-          <h2>Proatividade</h2>
-          <h2>Aprendizagem</h2>
+          <h2 class="slide-left">Trabalho em equipe</h2>
+          <h2 class="slide-right">Comunicação</h2>
+          <h2 class="slide-left">Inteligência emocional</h2>
+          <h2 class="slide-right">Proatividade</h2>
+          <h2 class="slide-left">Aprendizagem</h2>
         </div>
       </div>
     </div>
@@ -201,12 +204,13 @@
   <section id="container-contato-page">
     <div class="middle-content-contato slide-top">
       <h1>CONTATO</h1>
-      <form action="pagina-processa-dados">
+      <form action="https://formsubmit.co/talaiajoao211@gmail.com" method="POST">
         <div class="form-contato">
           <input type="text" name="nome" placeholder="Nome">
           <input type="email" name="email" placeholder="E-mail">
           <input id="mensagem" type="text" name="mensagem" placeholder="Mensagem">
-          <input class="btn-contato" type="button" value="ENVIAR">
+          <input class="btn-contato" type="submit" value="ENVIAR">
+          <input type="hidden" name="_captcha" value="false">
         </div>
       </form>
 
