@@ -22,6 +22,22 @@
   font-size: 5em;
 }
 
+#mensagem {
+  border-radius: 0.4em;
+  border: 4px solid transparent;
+  transition: border-color 0.8s;
+}
+
+#mensagem:hover {
+  border-color: #07e6e6;
+}
+
+#mensagem::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 form .form-contato {
   display: flex;
   gap: 1.5em;

@@ -128,8 +128,13 @@ footer div p {
 
 .footer-projetos a {
   text-decoration: none;
-  color: yellow;
+  color: #ffffff;
   font-size: 1.5em;
+  transition: color 0.5s;
+}
+
+.footer-projetos a:hover {
+  color: #26dada;
 }
 
 #btnMostrar {
