@@ -1,0 +1,94 @@
+@media (max-width: 1366px) {
+  .middle-content-sobre h1 {
+    padding-top: 2em;
+  }
+  .grid {
+    padding-top: 10em;
+  }
+  .header-projetos {
+    font-size: 0.7em;
+  }
+  .grid-projetos {
+    padding-top: 2em;
+    grid-template-columns: repeat(3, 23em);
+  }
+  .grid-projetos figure {
+    height: 15em;
+  }
+  .grid-projetos figure img {
+    height: 13em;
+  }
+}
+
+@media (max-width: 1500px) {
+  /* PÁGINA INICIAL*/
+  .logo-principal {
+    padding-top: 5em;
+  }
+  .logo-principal figure img {
+    width: 25em;
+    height: 25em;
+  }
+  .middle-content-home {
+    padding-top: 7em;
+  }
+  .apresentacao {
+    padding-top: 7em;
+  }
+  .apresentacao h1 {
+    font-size: 3em;
+  }
+  .apresentacao button {
+    margin-top: 5em;
+    width: 200px;
+  }
+  .apresentacao button a {
+    font-size: 30px;
+  }
+
+  /*PÁGINA SOBRE*/
+  .middle-content-sobre h1 {
+    font-size: 3.5em;
+  }
+  .middle-content-sobre .paragrafo {
+    font-size: 1.5em;
+  }
+
+  /*PÁGINA SKILLS*/
+  #container-skills-page {
+    font-size: 0.8em;
+  }
+  .grid {
+    padding-top: 12em;
+  }
+  .logo-Git,
+  .Logo-gitHub {
+    height: 12em;
+  }
+  .logo-Java {
+    height: 12em;
+  }
+
+  /*PÁGINA PROJETOS*/
+  .header-projetos {
+    font-size: 0.8em;
+  }
+  .grid-projetos {
+    padding-top: 3em;
+    grid-template-columns: repeat(3, 25em);
+  }
+  .grid-projetos figure {
+    height: 17em;
+  }
+  .grid-projetos figure img {
+    height: 15em;
+  }
+  /*PÁGINA PROJETOS*/
+  .middle-content-contato {
+    padding-top: 5em;
+  }
+
+  .middle-content-contato h1 {
+    padding-bottom: 0.3em;
+  }
+}
