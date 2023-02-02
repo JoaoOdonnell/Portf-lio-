@@ -92,3 +92,28 @@
     padding-bottom: 0.3em;
   }
 }
+
+@media (max-width: 600px) {
+  .logo {
+    padding-left: 0px;
+  }
+
+  .logo-principal {
+    display: none;
+  }
+
+  .apresentacao {
+    margin-top: 10em;
+    font-size: 0.75rem;
+  }
+
+  .footer-home {
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
+  }
+}
