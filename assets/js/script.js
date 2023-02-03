@@ -13,3 +13,12 @@ function mostrarMais() {
     btn.innerHTML = "Ver menos";
   }
 }
+
+const btnMobile = document.getElementById("btn-mobile");
+
+function toogleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("active");
+}
+
+btnMobile.addEventListener("click", toogleMenu);

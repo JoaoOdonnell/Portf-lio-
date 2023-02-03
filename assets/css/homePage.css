@@ -235,3 +235,7 @@ footer .figura a {
 .figura a:focus {
   transform: translateX(0) scale(1.5);
 }
+
+#btn-mobile {
+  display: none;
+}
