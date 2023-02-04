@@ -10,34 +10,44 @@
 
 .middle-content-sobre {
   width: 100%;
-  padding-left: 6em;
+  overflow: hidden;
 }
 
 .middle-content-sobre h1 {
   display: flex;
   justify-content: center;
+  text-align: center;
   padding-top: 3em;
-  padding-left: 1em;
   font-size: 4em;
   color: #ffff;
   padding-bottom: 0.2em;
 }
 
-.middle-content-sobre .paragrafo {
-  padding-left: 2em;
+#center-content {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-right: 20em;
+}
+
+.middle-content-sobre .paragrafo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-size: 2em;
   color: #ffff;
   text-align: justify;
 }
 
 .middle-content-sobre .paragrafo p {
-  width: 50%;
+  width: 30em;
 }
 
 .middle-content-sobre figure img {
-  position: absolute;
   display: flex;
-  width: 22%;
+  width: 30em;
+}
+
+.middle-content-sobre figure img {
+  animation: animacaoY 2s infinite alternate both;
 }
