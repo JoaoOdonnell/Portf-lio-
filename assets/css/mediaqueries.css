@@ -1,48 +1,15 @@
-@media (max-width: 1366px) {
-  .middle-content-sobre h1 {
-    padding-top: 2em;
-  }
-  .grid {
-    padding-top: 10em;
-  }
-  .header-projetos {
-    font-size: 0.7em;
-  }
-  .grid-projetos {
-    padding-top: 2em;
-    grid-template-columns: repeat(3, 23em);
-  }
-  .grid-projetos figure {
-    height: 15em;
-  }
-  .grid-projetos figure img {
-    height: 13em;
-  }
-}
-@media (max-width: 1000px) {
-  .logo {
-    padding-left: 0px;
-  }
-}
-
 @media (max-width: 1500px) {
   /* PÁGINA INICIAL*/
-  .logo-principal {
-    padding-top: 5em;
-  }
-  .logo-principal figure img {
-    width: 25em;
-    height: 25em;
-  }
+
   .middle-content-home {
-    padding-top: 7em;
+    gap: 100px;
+    padding: 100px;
   }
+
   .apresentacao {
-    padding-top: 7em;
+    margin-top: 7em;
   }
-  .apresentacao h1 {
-    font-size: 3em;
-  }
+
   .apresentacao button {
     margin-top: 5em;
     width: 200px;
@@ -98,28 +65,47 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1366px) {
+  .middle-content-sobre h1 {
+    padding-top: 2em;
+  }
+  .grid {
+    padding-top: 10em;
+  }
+  .header-projetos {
+    font-size: 0.7em;
+  }
+  .grid-projetos {
+    padding-top: 2em;
+    grid-template-columns: repeat(3, 23em);
+  }
+  .grid-projetos figure {
+    height: 15em;
+  }
+  .grid-projetos figure img {
+    height: 13em;
+  }
+}
+@media (max-width: 1200px) {
   #cabecalho {
     justify-content: space-around;
   }
 
   .logo {
-    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .middle-content-home {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .logo-principal {
     display: none;
   }
 
-  .apresentacao {
-    margin-top: 5em;
-    font-size: 0.75rem;
-  }
-
   .footer-home {
-    justify-content: space-around;
-    width: 100%;
-    text-align: center;
+    justify-content: center;
   }
 
   #menu #list-pages {
@@ -169,36 +155,29 @@
   #btn-mobile:hover {
     color: aqua;
   }
+}
 
-  #hamburguer {
-    margin-top: 5px;
-    border-top: 2px solid;
-    width: 20px;
-    color: #ffff;
+@media (max-width: 700px) {
+  #cabecalho {
+    justify-content: space-around;
   }
 
-  #hamburguer::after,
-  #hamburguer::before {
-    content: "";
-    margin-top: 5px;
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    transition: 0.3s;
-    position: relative;
+  .logo {
+    padding-left: 0px;
   }
 
-  #menu.active #hamburguer {
-    border-top-color: transparent;
+  .logo-principal {
+    display: none;
   }
 
-  #menu.active #hamburguer::before {
-    transform: rotate(135deg);
+  .apresentacao {
+    margin-top: 5em;
+    font-size: 0.75rem;
   }
 
-  #menu.active #hamburguer::after {
-    transform: rotate(-135deg);
-    top: -7px;
+  .footer-home {
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
   }
 }
